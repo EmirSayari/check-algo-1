@@ -1,0 +1,23 @@
+ALGORITHM CheckPoint
+VAR
+    nb-car:INTEGER:=0;
+    nb-mot:INTEGER:=1;
+    nb-voy:INTEGER:=0;
+
+    c:CHAR:='';
+
+BEGIN
+    WHILE (c<>.) 
+    read(c):
+        nb-car=nb-car+1;
+        IF (c='') THEN
+            nb-mot:=nb-mot+1;
+         IF (c'a'OR c='i'OR c='u'OR c='y' OR c='o' OR c='e') THEN nb-voy+1
+
+         END_IF
+    END_WHILE 
+    write('le nbre de voyels est',nb-voy)
+    write('le nbre de caractères est',nb-car)
+    write('le nbre de mots égale',nb-mot)
+
+END
